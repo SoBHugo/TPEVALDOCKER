@@ -12,6 +12,7 @@ Dans les secrets on oublie pas de renseigner le DOCKER_USERNAME et le DOCKER_PAS
 (ma connexion fail je ne sais pas trop pourquoi.
 
 On créer notre dockerfile qui va lancer notre application.
+docker build -t hugocadieu/mon-conteneur:latest .
 
 
 4- On déploit l'application sur le cluster docker swarm
