@@ -11,20 +11,18 @@ On configure notre Github Actions docker-build.yml, on y configure une action qu
 Dans les secrets on oublie pas de renseigner le DOCKER_USERNAME et le DOCKER_PASSWORD (mes identifiants docker).
 (ma connexion fail je ne sais pas trop pourquoi.
 
-On créer notre dockerfile qui va lancer notre application.
-docker build -t hugocadieu/mon-conteneur:latest .
+Ensuite on crée notre Dockerfile pour construite une image docker contenant notre application
+docker build -t sobhugo/mon-conteneur:latest .
 
 
 4- On déploit l'application sur le cluster docker swarm
+on décrit le dploiement de notre app swarm dans docker-compose.yml
 
-docker stack deploy -c hugocadieu/ your_app_stack_name
-
-
-
-
+Puis on déploit notre application sur le Swarm
+docker stack deploy -c sobhugo/mon-conteneur:latest
 
 
 
-Ensuite on crée notre Dockerfile pour construite une image docker contenant notre application
+
 
 
