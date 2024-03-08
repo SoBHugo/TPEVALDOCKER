@@ -14,10 +14,10 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Build Docker image
-        run: docker build -t tpevaldocker/dockerfile .
+        run: docker build -t hugocadieu/conteneur-devops:latest .
 
       - name: Log in to Docker Hub
         run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Push Docker image
-        run: docker push -t my-app-img -f tpevaldocker/dockerfile
+        run: docker push -t hugocadieu/conteneur-devops:latest
