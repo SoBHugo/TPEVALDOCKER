@@ -32,6 +32,9 @@ Puis on déploit notre application sur le Swarm
 docker stack deploy -c sobhugo/mon-conteneur:latest
 
 
+Il me manque la partie connexion à la Bdd, je ne savais pas comment m'y prendre..
+
+
 
 
 
