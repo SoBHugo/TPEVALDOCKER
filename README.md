@@ -11,7 +11,7 @@ On configure notre Github Actions docker-build.yml, on y configure une action qu
 
 
 Dans les secrets on oublie pas de renseigner le DOCKER_USERNAME et le DOCKER_PASSWORD (mes identifiants docker).
-(ma connexion fail je ne sais pas trop pourquoi.
+
 
 
 
