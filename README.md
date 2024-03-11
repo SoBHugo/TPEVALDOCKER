@@ -18,7 +18,7 @@ Dans les secrets on oublie pas de renseigner le DOCKER_USERNAME et le DOCKER_PAS
 Ensuite on crée notre Dockerfile pour construite une image docker contenant notre application
 
 
-docker build -t sobhugo/mon-conteneur:latest .
+docker build -t hugocadieu/my-app:latest .
 
 
 
@@ -29,7 +29,7 @@ on décrit le dploiement de notre app swarm dans docker-compose.yml
 Puis on déploit notre application sur le Swarm
 
 
-docker stack deploy -c sobhugo/mon-conteneur:latest
+docker stack deploy -c hugocadieu/my-app:latest
 
 
 Il me manque la partie connexion à la Bdd, je ne savais pas comment m'y prendre..
